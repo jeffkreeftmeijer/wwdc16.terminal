@@ -1,0 +1,71 @@
+$black:   #292C36;
+$red:     #D2242E;
+$green:   #84BD5C;
+$yellow:  #C9794B;
+$blue:    #716EB1;
+$magenta: #A52281;
+$cyan:    #379D92;
+
+div.black {
+  background-color: $black;
+}
+
+div.red {
+  background-color: $red;
+}
+
+div.green {
+  background-color: $green;
+}
+
+div.yellow {
+  background-color: $yellow;
+}
+
+div.blue {
+  background-color: $blue;
+}
+
+div.magenta {
+  background-color: $magenta;
+}
+
+div.cyan {
+  background-color: $cyan;
+}
+
+div.white {
+  background-color: lighten($black, 50%);
+}
+
+div.bright_black {
+  background-color: lighten($black, 10%);
+}
+
+div.bright_red {
+  background-color: saturate($red, 25%);
+}
+
+div.bright_green {
+  background-color: saturate($green, 25%);
+}
+
+div.bright_yellow {
+  background-color: saturate($yellow, 25%);
+}
+
+div.bright_blue {
+  background-color: saturate($blue, 25%);
+}
+
+div.bright_magenta {
+  background-color: saturate($magenta, 25%);
+}
+
+div.bright_cyan {
+  background-color: saturate($cyan, 25%);
+}
+
+div.bright_white {
+  background-color: lighten(lighten($black, 75%), 25%);
+}
