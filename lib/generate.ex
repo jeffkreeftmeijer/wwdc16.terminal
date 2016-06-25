@@ -51,6 +51,9 @@ defmodule Mix.Tasks.Generate do
     |> Enum.each(fn({key, colors}) ->
       plist = colors |> Colorscheme.Terminal.to_plist
       "wwdc16-#{key}.terminal" |> File.write!(plist)
+
+      plist = colors |> Colorscheme.Iterm2.to_plist
+      "wwdc16-#{key}.itermcolors" |> File.write!(plist)
     end)
   end
 end
