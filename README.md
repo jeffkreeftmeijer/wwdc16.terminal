@@ -1,11 +1,11 @@
 # wwdc16.terminal
 
-ANSI color profiles for Terminal.app and iTerm2, inspired by http://apple.com/wwdc. Great with Vim's default color scheme, even better with [default2].
+ANSI color profiles for Terminal.app and iTerm2, inspired by http://apple.com/wwdc. Great with Vim's default color scheme, even better with [Dim].
 
 ![wwdc16-dark in Terminal.app]
 ![wwdc16-light in Terminal.app]
 
-[default2]: https://github.com/jeffkreeftmeijer/vim-default2
+[Dim]: https://github.com/jeffkreeftmeijer/vim-dim
 [wwdc16-dark in Terminal.app]: wwdc16-dark.png
 [wwdc16-light in Terminal.app]: wwdc16-light.png
 
