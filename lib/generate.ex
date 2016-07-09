@@ -22,14 +22,14 @@ defmodule Mix.Tasks.Generate do
 
     [
       light: Keyword.merge(colors, [
-        background: "FFFFFF" |> Color.from_hexadecimal,
-        bold_text: "292C36" |> Color.from_hexadecimal,
-        text: "292C36" |> Color.from_hexadecimal,
+        background: colors[:bright_white],
+        bold_text: colors[:black],
+        text: colors[:black]
       ]),
       dark: Keyword.merge(colors, [
-        background: "292C36" |> Color.from_hexadecimal,
-        bold_text: "FFFFFF" |> Color.from_hexadecimal,
-        text: "FFFFFF" |> Color.from_hexadecimal,
+        background: colors[:black],
+        bold_text: colors[:bright_white],
+        text: colors[:bright_white]
       ])
     ] 
     |> Enum.each(fn({key, colors}) ->
