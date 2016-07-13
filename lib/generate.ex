@@ -1,27 +1,33 @@
 defmodule Mix.Tasks.Generate do
   def run(_) do
-    colors = [
-      black:   "292C36",
-      red:     "D2242E",
-      green:   "84BD5C",
-      yellow:  "C9794B",
-      blue:    "716EB1",
-      magenta: "A52281",
-      cyan:    "379D92",
-      white:   "A4A9BA",
+    black =   "292C36" |> Color.from_hexadecimal
+    red =     "D2242E" |> Color.from_hexadecimal
+    green =   "84BD5C" |> Color.from_hexadecimal
+    yellow =  "C9794B" |> Color.from_hexadecimal
+    blue =    "716EB1" |> Color.from_hexadecimal
+    magenta = "A52281" |> Color.from_hexadecimal
+    cyan =    "379D92" |> Color.from_hexadecimal
+    white =   black    |> Color.lighten(0.5)
 
-      bright_black:   "3F4453",
-      bright_red:     "F10513",
-      bright_green:   "7FDA3F",
-      bright_yellow:  "E6712E",
-      bright_blue:    "5852CD",
-      bright_magenta: "BE098C",
-      bright_cyan:    "1DB8A7",
-      bright_white:   "FFFFFF",
+    colors = [
+      black:   black,
+      red:     red,
+      green:   green,
+      yellow:  yellow,
+      blue:    blue,
+      magenta: magenta,
+      cyan:    cyan,
+      white:   white,
+
+      bright_black:   black    |> Color.lighten(0.1),
+      bright_red:     red      |> Color.lighten(0.25),
+      bright_green:   green    |> Color.lighten(0.25),
+      bright_yellow:  yellow   |> Color.lighten(0.25),
+      bright_blue:    blue     |> Color.lighten(0.25),
+      bright_magenta: magenta  |> Color.lighten(0.25),
+      bright_cyan:    cyan     |> Color.lighten(0.25),
+      bright_white:   "FFFFFF" |> Color.from_hexadecimal
     ]
-    |> Enum.map(fn({key, color}) ->
-      {key, color |> Color.from_hexadecimal}
-    end)
 
     [
       light: Keyword.merge(colors, [
