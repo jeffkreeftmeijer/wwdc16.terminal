@@ -10,7 +10,6 @@ defmodule Wwdc16.Mixfile do
 
   def deps do
     [
-      {:color, git: "git://github.com/jeffkreeftmeijer/color.git"},
       {:colorscheme, git: "git://github.com/jeffkreeftmeijer/colorscheme.git"}
     ]
   end
