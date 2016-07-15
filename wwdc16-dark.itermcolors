@@ -110,7 +110,7 @@
 		<key>Green Component</key>
 		<real>0.3911764705882353</real>
 		<key>Red Component</key>
-		<real>1.0735294117647058</real>
+		<real>1</real>
 	</dict>
 	<key>Ansi 10 Color</key>
 	<dict>
@@ -132,7 +132,7 @@
 		<key>Green Component</key>
 		<real>0.7245098039215686</real>
 		<key>Red Component</key>
-		<real>1.038235294117647</real>
+		<real>1</real>
 	</dict>
 	<key>Ansi 12 Color</key>
 	<dict>
