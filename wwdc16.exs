@@ -1,12 +1,12 @@
 use Mix.Config
 
 black =   "292C36" |> Color.from_hexadecimal
-red =     "D2242E" |> Color.from_hexadecimal
-green =   "84BD5C" |> Color.from_hexadecimal
-yellow =  "C9794B" |> Color.from_hexadecimal
-blue =    "716EB1" |> Color.from_hexadecimal
-magenta = "A52281" |> Color.from_hexadecimal
-cyan =    "379D92" |> Color.from_hexadecimal
+red =     "DC3C3C" |> Color.from_hexadecimal
+green =   "95C76F" |> Color.from_hexadecimal
+yellow =  "D28E5D" |> Color.from_hexadecimal
+blue =    "8485CE" |> Color.from_hexadecimal
+magenta = "B73999" |> Color.from_hexadecimal
+cyan =    "00ABA5" |> Color.from_hexadecimal
 white =   black    |> Color.lighten(0.5)
 
 colors = [
